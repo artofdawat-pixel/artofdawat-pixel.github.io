@@ -4,7 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Art of Dawat hosts iftars, singles evenings and game nights in New York City. Gather, connect, belong.">
-<title>Art of Dawat</title>
+<title>Art of Dawat · Gatherings in New York City</title>
+<link rel="canonical" href="https://artofdawat.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#132A1D">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Art of Dawat">
+<meta property="og:title" content="Art of Dawat · Iftar &amp; Chai Night, Ramadan 2027">
+<meta property="og:description" content="Hosted iftars, singles evenings and game nights in New York City, rooted in Muslim hospitality. Everyone welcome.">
+<meta property="og:url" content="https://artofdawat.com/">
+<meta property="og:image" content="https://artofdawat.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://artofdawat.com/og-image.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Art of Dawat","legalName":"Art of Dawat LLC","url":"https://artofdawat.com/","logo":"https://artofdawat.com/apple-touch-icon.png","email":"info@artofdawat.com","slogan":"Gather · Connect · Belong","areaServed":"New York City"}</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap">
@@ -132,6 +149,17 @@ footer{padding-block:3rem;border-top:1px solid var(--rule);background:var(--fore
 footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1.2rem;flex-wrap:wrap}
 footer .brand{font-size:1.3rem}
 
+
+section[id]{scroll-margin-top:72px}
+/* faq */
+.faq{display:flex;flex-direction:column;border-top:1px solid var(--rule);max-width:52rem}
+.faq details{border-bottom:1px solid var(--rule)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;padding-block:1.4rem;font-family:var(--display);font-size:clamp(1.3rem,2.6vw,1.65rem);color:var(--cream)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:12px;height:12px;border-right:1px solid var(--gold);border-bottom:1px solid var(--gold);transform:rotate(45deg) translateY(-4px);transition:transform .35s ease}
+.faq details[open] summary::after{transform:rotate(225deg) translateY(-2px)}
+.faq summary:hover{color:var(--gold-soft)}
+.faq .a{padding-bottom:1.5rem;color:var(--cream-soft);max-width:60ch}
 @keyframes rise{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
 @keyframes fadeup{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 @keyframes breathe{0%,100%{opacity:.75;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.06)}}
@@ -165,6 +193,7 @@ footer .brand{font-size:1.3rem}
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#how">How it works</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a class="tix" href="#events">Events</a></li>
       </ul>
@@ -287,6 +316,24 @@ footer .brand{font-size:1.3rem}
         <div class="step reveal"><span class="n">1</span><h3>Reserve</h3><p>Buy your seat here on our site with secure card checkout.</p></div>
         <div class="step reveal"><span class="n">2</span><h3>Check your inbox</h3><p>Your receipt arrives by email right away. That receipt is your ticket.</p></div>
         <div class="step reveal"><span class="n">3</span><h3>Arrive</h3><p>Give your name at the door. We'll take it from there.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="faq">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="label">Questions</span>
+        <h2>Before you <em>arrive</em></h2>
+      </div>
+      <div class="faq reveal">
+        <details open><summary>Who are these evenings for?</summary><p class="a">Art of Dawat is rooted in Muslim hospitality, and everyone is welcome at the table. Come curious, come kind, and come hungry.</p></details>
+        <details><summary>Is alcohol served?</summary><p class="a">No. Every Art of Dawat event is alcohol-free.</p></details>
+        <details><summary>Can I come on my own?</summary><p class="a">Yes. Many guests do. Every evening is hosted, and we make introductions so no one is left standing alone.</p></details>
+        <details><summary>What does the iftar ticket include?</summary><p class="a">An iftar dinner served at sunset, followed by chai, coffee and dessert.</p></details>
+        <details><summary>How do tickets work?</summary><p class="a">You buy your seat here with secure card checkout. Your emailed receipt is your ticket, and you check in by name at the door.</p></details>
+        <details><summary>Where are events held?</summary><p class="a">At restaurants and venues in New York City. The venue for each event is announced on this page and in your ticket email.</p></details>
+        <details><summary>Can I partner with or sponsor an event?</summary><p class="a">We'd love that. Email info@artofdawat.com with a little about you or your space.</p></details>
       </div>
     </div>
   </section>
